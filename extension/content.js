@@ -24,7 +24,7 @@ document.addEventListener("readystatechange", (event) => {
   button.style.boxShadow = "0 2px 5px rgba(0, 0, 0, 0.2)";
 
   button.addEventListener("click", function () {
-    window.location.href = freeUrl(document.URL);
+    window.open(freeUrl(document.URL),'_blank');
   });
 
   document.body.appendChild(button);
